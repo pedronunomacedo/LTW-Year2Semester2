@@ -1,0 +1,77 @@
+body {
+    grid-template-columns: [start] 19em [section2-start] 19em [middle] auto [end];
+    grid-template-rows: [start] 4em [nav-start] 4em [content-start] auto [footer-start] auto [end];
+    display: grid;
+}
+
+body > header {
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: start;
+    grid-row-end: nav-start;
+}
+
+
+body > nav {
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: nav-start;
+    grid-row-end: content-start;
+}
+
+/*
+body > aside {
+    grid-column-start: middle;
+    grid-column-end: end;
+    grid-row-start: content-start;
+}
+*/
+
+
+
+/*
+body > main > section > #s1 {
+    grid-column-start: start;
+    grid-column-end: section2-start;
+    grid-row-start: content-start;
+    grid-row-end: end;
+}
+
+body > main > section > #s2 {
+    grid-column-start: section2-start;
+    grid-column-end: middle;
+    grid-row-start: content-start;
+    grid-row-end: end;
+}
+*/
+
+/* TEST 2 */
+body > main {
+    grid-column-start: start;
+    grid-column-end: middle;
+    grid-row-start: content-start;
+    grid-row-end: end;
+    float: left;
+}
+body > main > section #s1 {
+    grid-column-start: start;
+    grid-column-end: section2-start;
+    grid-row-start: content-start;
+    grid-row-end: end;
+    float: left;
+}
+body > main > section #s2 {
+    grid-column-start: section2-start;
+    grid-column-end: middle;
+    grid-row-start: content-start;
+    grid-row-end: end;
+    float: right;
+}
+
+/*
+body > footer {
+    grid-column-start: middle;
+    grid-column-end: end;
+    grid-row-start: footer-start;
+}
+*/

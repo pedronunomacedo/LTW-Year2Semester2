@@ -1,0 +1,50 @@
+body {
+    grid-template-columns: [start] 38em [middle] auto [end];
+    grid-template-rows: [start] 4em [nav-start] 4em [content-start] auto [footer-start] auto [end];
+    display: grid;
+}
+
+body > header {
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: start;
+    grid-row-end: nav-start;
+}
+
+body > nav {
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: nav-start;
+    grid-row-end: content-start;
+}
+
+body > main {
+    grid-column-start: start;
+    grid-column-end: middle;
+    grid-row-start: content-start;
+    grid-row-end: footer-start;
+}
+
+body > main > section > article {
+    display: inline-block;
+    width: 7.5em; /* How to not give the exate size of each article? */
+}
+
+body > main > section {
+    grid-column-start: start;
+    grid-column-end: middle;
+}
+
+body > aside {
+    grid-column-start: middle;
+    grid-column-end: end;
+    grid-row-start: content-start;
+    grid-row-end: footer-start;
+}
+
+body > footer {
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: footer-start;
+    grid-row-end: end;
+}
