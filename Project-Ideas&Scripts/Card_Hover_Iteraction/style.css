@@ -1,0 +1,41 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background: #13181c;
+}
+
+.card {
+    color: var(--clr-neutral-100);
+    background-image: url("https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_30/Stores/y14ddrwy7xfem8fbnpif");
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 100ch;
+}
+
+.card-content {
+    --pading: 1.5rem;
+    padding: var(--pading);
+    background: hsl(0 0% 0% / 0.5);
+}
+
+.card-title {
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: var(--clr-accent-400);
+}
