@@ -1,0 +1,31 @@
+html {
+    font-size: 2rem;
+}
+
+body {
+    with: 30em;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: stretch;
+    margin: 2em;
+}
+
+label {
+    display: flex;
+    gap: 1em;
+}
+
+input {
+    flex-grow: 1;
+    text-align: center;
+}
+
+input, 
+button {
+    font-size: 1rem;
+}
