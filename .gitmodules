@@ -1,0 +1,3 @@
+[submodule "Projects/LTW-Project"]
+	path = Projects/LTW-Project
+	url = git@github.com:pedronunomacedo/LTW-Project.git
