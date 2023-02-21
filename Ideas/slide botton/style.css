@@ -1,0 +1,56 @@
+.toggle-switch {
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.mt-1 {
+    margin-top: .25 rem !important;
+}
+
+.toggle-switch-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.toggle-switch-label {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 2rem;
+    background-color: #e7eaf3;
+    background-color: content-box;
+    border: .125rem solid transparent;
+    border-radius: 6.1875rem;
+    transition: .3s;
+}
+
+.toggle-switch-indicator {
+    position: absolute;
+    left: .125rem;
+    bottom: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(140,152,164,.25);
+    border-radius: 50%;
+    transition: translate3d(0,50%,0);
+    transition: .3s;
+}
+
+.toggle-switch-content {
+    flex: 1;
+    margin-left: .5rem;
+}
+
+d-block {
+    display: block !important;
+}

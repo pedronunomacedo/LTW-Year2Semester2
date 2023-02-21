@@ -1,3 +1,6 @@
 [submodule "Projects/LTW-Project"]
 	path = Projects/LTW-Project
 	url = git@github.com:pedronunomacedo/LTW-Project.git
+[submodule "Projects/1st_project"]
+	path = Projects/1st_project
+	url = git@github.com:pedronunomacedo/LTW-Project.git
