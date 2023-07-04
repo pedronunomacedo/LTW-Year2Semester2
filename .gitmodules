@@ -6,4 +6,4 @@
 	url = git@github.com:pedronunomacedo/LTW-Project.git
 [submodule "Project"]
 	path = Project
-	url = git@github.com:pedronunomacedo/LTW-Year2Semester2.git
+	url = git@github.com:pedronunomacedo/LTW-Project.git
